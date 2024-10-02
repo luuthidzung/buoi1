@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hình Vuông Chéo Nhau</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            background-color: #f0f0f0; 
+        }
+
+        .container {
+            width: 146px;
+            height: 126px;
+            background-color: #C4C4C4;
+            position: relative; 
+            overflow: hidden;
+            border: 1px solid #ccc; 
+        }
+
+        .square {
+            width: 55px;
+            height: 55px;
+            position: absolute; 
+        }
+
+        .red {
+            background-color: #EB5757;
+            top: 0;
+            left: 0; 
+        }
+
+        .orange {
+            background-color: #F2994A;
+            bottom: 0; 
+            right: 0; 
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="square red"></div>
+        <div class="square orange"></div>
+    </div>
+</body>
+</html>

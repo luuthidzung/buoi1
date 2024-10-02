@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container with Squares</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 385px;
+            height: 110px;
+            background-color: #fffefe;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ccc; 
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            height: 55px;
+            margin-bottom: 0;
+        }
+
+        .square {
+            width: 55px;
+            height: 55px;
+            margin: 0 27.5px;
+            background-color: #F2994A;
+        }
+
+        .row:first-child {
+            margin-left: 0;
+        }
+
+        .row:first-child .square:first-child {
+            margin-left: 0;
+        }
+
+        .row:first-child .square:last-child {
+            margin-right: 0;
+        }
+
+        .row:last-child .square {
+            background-color: #F2994A;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .row:first-child .square {
+            background-color: #F2994A;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="row">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+    </div>
+</body>
+</html>

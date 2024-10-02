@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2x2 Rhombus Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+        .container {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            background-color: #ffffff;
+        }
+        .rhombus {
+            width: 55px;
+            height: 55px;
+            background-color: transparent;
+            position: absolute;
+            transform: rotate(45deg);
+        }
+        .rhombus.orange {
+            background-color: #F2994A;
+            left: 10px;
+        }
+        .rhombus.purple {
+            background-color: #9B51E0;
+            top: 0;
+            left: 86px;
+        }
+        .rhombus.blue {
+            background-color: #2F80ED;
+            top: 78px;
+            left: 10px;
+        }
+        .rhombus.red {
+            background-color: #EB5757;
+            top: 78px;
+            left: 86px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="rhombus orange"></div>
+        <div class="rhombus purple"></div>
+        <div class="rhombus blue"></div>
+        <div class="rhombus red"></div>
+    </div>
+</body>
+</html>

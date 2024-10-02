@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Nhập</title>
+    <style>
+    * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .content {
+            width: 339px;
+            height: 339px;
+            background-color: #F2994A;
+            border-radius: 10px; 
+           
+        }
+
+        .form-login {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px;
+            height: 100%;
+        }
+
+        .icon-user img {
+            width: 49px;
+            height: 49px;
+        }
+
+        .input-username input{
+            margin-bottom: 10px;
+            color: #fff;
+            width: 195px;
+            height: 41px;
+            font-size: 14px;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 6px;
+            text-transform: uppercase;
+            background-color: transparent;
+            border: 1px solid #fff;
+        }
+        .input-password input {
+            padding: 10px;
+            margin-top: 6px;
+            color: #fff;
+            width: 195px;
+            height: 41px;
+            font-size: 14px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            background-color: transparent;
+            border: 1px solid #fff;
+            
+        }
+
+        .input-username input::placeholder,
+        .input-password input::placeholder {
+            color: #fff;
+        }
+
+        .btn button {
+            width: 195px;
+            height: 40px;
+            border-radius: 5px;
+            background: rgba(155, 81, 224, 1);
+            border: none;
+            margin-top: 25px;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #fff;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+
+            
+        }
+
+        .btn button:hover {
+            background: #9B51E0; 
+        }
+
+        .forgot-pass {
+            font-family: Roboto;
+            margin-top: 8px;
+            font-size: 10px;
+            color: #fff;
+            text-align: end;
+            width: 100%;
+            padding-right: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <form action="" class="form-login">
+                <div class="icon-user">
+                    <img src="./image/img.png" alt="User Icon"> 
+                </div>
+                <div class="input-username">
+                    <input type="text" placeholder="USERNAME">
+                </div>
+                <div class="input-password">
+                    <input type="password" placeholder="PASSWORD">
+                </div>
+                <div class="btn">
+                    <button type="submit">LOGIN</button>
+                </div>
+                <div class="forgot-pass">Forgot password?</div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html> 
